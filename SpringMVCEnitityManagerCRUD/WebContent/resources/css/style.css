@@ -1,0 +1,477 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family: 'Raleway', sans-serif;
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* disable webkit tap highlight */
+	text-decoration:none;
+}
+
+a{ text-decoration:none;}
+
+.page1{
+	background-image:url(/SpringMVCEnitityManagerCRUD/resources/image/desk.jpg);
+	background-position:center center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+.page2{
+	background:#fff;
+}
+
+/* loading*/
+
+.loading{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#292d2f;
+	z-index:20;
+	}
+	
+
+@-webkit-keyframes pad {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, 100px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes ball {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(140px, 100px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+#pong {
+  display: block;
+  height: 150px;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin: 150px auto;
+}
+#pong:after {
+  content: "loading";
+	position: relative;
+	top: 130px;
+	width: 200px;
+	display: inline-block;
+	text-align: center;
+	color:#fff;
+}
+#pong .pad {
+  float: left;
+  display: block;
+  width: 5px;
+  height: 20px;
+  background-color: #fed03a;
+  margin-left: 10px;
+  -webkit-animation: pad 3s infinite ease-in-out;
+}
+#pong .ball {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  float: left;
+  background-color: #fed03a;
+  -webkit-animation: ball 3s infinite linear;
+}
+#pong .ball + .pad {
+  margin-left: 140px;
+  -webkit-animation: 3s pad -0.5s infinite ease-in;
+}
+
+/*--------HELLO-----------*/
+
+.hello{
+	width:700px;
+	left:50%;
+	top:35%;
+	margin-left:-350px;	
+	position:absolute;
+	background:rgba(256,256,256,0.93);
+    height: auto;
+	text-align:center;
+	padding:10px 0;
+	opacity:0;
+	-webkit-transition-duration: 700ms;
+    -moz-transition-duration: 700ms;
+    -o-transition-duration: 700ms;
+    transition-duration: 700ms;
+}
+
+.hello h1{
+	font-size:3rem;
+	line-height:3rem;
+	opacity:0;
+	color:#292d2f;
+	font-weight: 800;
+	-webkit-transition-duration: 100ms;
+    -moz-transition-duration: 100ms;
+    -o-transition-duration: 100ms;
+    transition-duration: 100ms;
+}
+
+.hello h1 span{
+	font-size:2.1rem;
+	line-height:2.1rem;
+	font-weight:400;
+	color:#888888;
+	}
+	
+.owl-carousel{
+	width:100%;
+	overflow:hidden;
+	cursor:all-scroll;}
+	
+.soon{
+	width:700px;
+	margin:50px auto 0;
+    height: auto;
+	text-align:center;
+	padding:10px 0;
+	
+}
+
+.soon h2{
+	font-size:2.1rem;
+	line-height:2.1rem;
+	font-weight:400;
+	color:#888888;
+	opacity:0;
+	-webkit-transition-duration: 100ms;
+    -moz-transition-duration: 100ms;
+    -o-transition-duration: 100ms;
+    transition-duration: 100ms;
+	
+}
+
+/*-----------PAGE2-------------*/
+
+
+.container{
+	width:50%;
+	height:100%;
+	position:absolute;
+	top:0;
+}
+
+.left{
+	left:0;
+	background:#fff;
+	
+}
+
+.right{
+	right:0;
+	background:url(../img/atwork.jpg);
+	background-size:cover;
+	background-position:center center;
+	opacity:0;
+	-webkit-transition-duration: 100ms;
+    -moz-transition-duration: 100ms;
+    -o-transition-duration: 100ms;
+    transition-duration: 100ms;
+}
+
+.align{
+	max-width:400px;
+	margin:0 auto;
+  position: relative;
+  top: 15%;
+  opacity:0;
+	-webkit-transition-duration: 100ms;
+    -moz-transition-duration: 100ms;
+    -o-transition-duration: 100ms;
+    transition-duration: 100ms;
+  
+}
+
+
+h3{
+	
+	font-size:3rem;
+	line-height:3rem;
+	color:#292d2f;
+	font-weight: 800;
+	margin:0;
+	
+	
+}
+
+.left p{
+	
+	font-size:1.1rem;
+	line-height:1.8rem;
+	font-weight:400;
+	color:#888888;
+	
+	
+	
+	}
+
+
+/*----------PAGE3-----------*/
+
+.owl-carousel{
+
+	  opacity:0;
+	-webkit-transition-duration: 100ms;
+    -moz-transition-duration: 100ms;
+    -o-transition-duration: 100ms;
+    transition-duration: 100ms;
+	}
+
+.page3{
+	
+	background:#d8d4ce;
+	}
+	
+.soon a svg{
+		fill:#888888;
+		width:50px;
+ transition: fill .4s ease;
+  -webkit-transition: fill .4s ease;
+ 
+
+  -o-transition: fill .4s ease;
+   
+
+  -moz-ttransition: fill .4s ease;
+   
+
+	}
+	
+	
+  
+  	#tweet:hover {
+		fill:#55acee;}
+		
+		
+  
+  	#dribbble:hover{
+		fill:#ea4c89;}
+#behance{
+	margin:0 -5px 0 4px;}
+			#behance:hover{
+		fill:#1769ff;}
+		
+		#tumblr:hover{
+		fill:#35465c;}
+		
+		#pinterest:hover{
+		fill:#cc2127;}
+		
+		#insta:hover{
+		fill:#33648d;}
+		
+		#insta, #tumblr{margin-bottom:2px;}
+		
+		.owl-controls{
+			display:none;}
+			
+			
+/* Smartphones (portrait) ----------- */
+@media  screen 
+and (max-width: 320px)  {
+
+}
+
+
+@media only screen and (min-width: 1800px){
+
+}
+/* DESKTOP ----------- */
+@media only screen and (min-width: 1200px) and (max-width: 1800px){
+
+}
+/* LAPTOP ----------- */
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+
+
+}
+/* IPAD LANDSCAPE ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+}
+
+
+
+
+/* IPAD PORTRAIT ----------- */
+@media only screen and (min-width: 480px) and (max-width: 768px){
+
+	
+	
+
+	
+.container{
+	width:100%;
+	position:absolute;
+	left:0;
+}
+
+.left{
+	height:70%;
+	top:30%;
+	background:#fff;
+	
+}
+
+.right{
+	height:30%;
+	top:0;
+	background:url(../img/atwork-m.jpg);
+	background-position:center center;
+	  background-size:100%;
+	  background-repeat:no-repeat;
+}
+
+	
+	
+	
+
+
+}
+
+/* IPAD PORTRAIT ----------- */
+@media only screen and (min-width: 0px) and (max-width: 480px){
+
+.hello{
+	width:300px;
+	left:50%;
+	top:35%;
+	margin-left:-150px;	
+}
+
+.hello h1{
+	font-size:1.4rem;
+	line-height:2rem;
+	
+}
+
+.hello h1 span{
+	font-size:15px;
+	line-height:15px;
+	
+	}
+	
+	.soon{
+	width:300px;
+	margin:100px auto 0;	
+}
+
+.soon h2{
+	font-size:1.2rem;
+	line-height:1.2rem;	
+}
+
+.soon a svg {
+
+width: 46px;}
+
+.container{
+	width:100%;
+	position:absolute;
+	left:0;
+}
+
+.left{
+	height:70%;
+	top:30%;
+	background:#fff;
+	
+}
+
+.right{
+	height:30%;
+	top:0;
+	background:url(../img/atwork-m.jpg);
+	background-position:center center;
+	  background-size:100%;
+	  background-repeat:no-repeat;
+}
+
+.align{
+	max-width:280px;
+	top:5%;
+	}
+
+section {
+    position: relative;
+    z-index: 1; /* needed for setting pseudo-element z-index */
+    backface-visibility: hidden;
+}
+
+h3{
+	
+	font-size:2rem;
+	line-height:2rem;
+	
+	
+	
+}
+
+.left p{
+	
+	font-size:15px;
+	line-height:21px;
+	
+	
+	
+	
+	}
+}
+ 
+section a {
+    outline: none;
+    color: #404d5b;
+    text-decoration: none;
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+}
+ 
+section a::before,
+section a::after {
+    pointer-events: none;
+    backface-visibility: hidden;
+}
+
+.link-fadeinbg a{
+	color:#888888;
+}
+
+.link-fadeinbg a {
+	border-bottom: 1px solid #fcc71f;
+	font-weight: 500;
+	-webkit-transition: background-color 0.3s, border-color 0.3s;
+	transition: background-color 0.3s, border-color 0.3s;
+}
+
+.link-fadeinbg a:hover,
+.link-fadeinbg a:focus {
+	border-color: #fcc71f;
+	background-color: #fcc71f;
+	color:#fff;
+}
+			
+
